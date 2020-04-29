@@ -106,14 +106,18 @@ body {
     color: #46317A;
 }
 
+
 /* where the list start and the buttons */
+
 .list-container {
     display: grid;
     grid-template: 80% auto / 1fr;
     grid-gap: 1em;
 }
 
+
 /* just the list */
+
 .list-field {
     background-color: white;
     grid-row: 1 / 1;
@@ -124,42 +128,15 @@ body {
     height: auto;
 }
 
-.list-field::-webkit-scrollbar{
+.list-field::-webkit-scrollbar {
     width: 15px;
 }
 
-.list-field::-webkit-scrollbar-thumb{
-    background: #46317A; 
+.list-field::-webkit-scrollbar-thumb {
+    background: #46317A;
     border-radius: 10px;
 }
 
-/* wish container with checkbox and text*/
-.list-item {
-    display: flex;
-    height: auto;
-    flex-direction: row;
-    border-bottom: solid 1.2px rgb(215, 215, 215);
-    margin-top: 0.8em;
-    box-sizing: border-box;
-    padding-bottom: 0.8em;
-}
-
-/* just the checkbox */
-
-.list-check-box {
-    border: solid 0.2em #674A9E;
-    border-radius: 5px;
-    width: 1em;
-    height: 1em;
-    align-self: flex-start;
-}
-
-/* just the wish text */
-.list-item p {
-    margin: 0 0.5em;
-    width: 80%;
-    align-self: flex-start;
-}
 
 .list-end-buttons-container {
     display: flex;

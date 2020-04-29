@@ -26,13 +26,14 @@ export class ListItemComponent extends HTMLElement {
                 margin: 0 0.5em;
                 width: 80%;
                 align-self: flex-start;
+                color:#674A9E;
                 }
 
             </style>
                       
             <div class="list-item">
                 <div class="list-check-box"></div>
-                <p>Assistir o pôr do sol no parque </p>
+                <p contenteditable = "true"></p>
             </div>           
         `;
     }

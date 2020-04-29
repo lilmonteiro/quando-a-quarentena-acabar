@@ -1,20 +1,24 @@
 import { ListItemComponent } from "/components/ListItemComponent.js"
+import { AddItemListBtnComponent } from "/components/AddItemListBtnComponent.js"
+
 
 var start = function() {
-    var cancelAddBtn = document.querySelector("#create-cancel-btn")
+    let cancelAddBtn = document.querySelector("#create-cancel-btn")
     cancelAddBtn.addEventListener("click", function() {
         window.location = "/html/index.html"
-    })
+    });
 
-    teste();
+    let addItemListBtn = document.querySelector("add-item-list-btn");
+    addItemListBtn.addEventListener("click", addItemListBtnHandler);
 }
 
-let teste = function() {
-    let listContainer = document.querySelector(".list-field")
-    for (let i = 0; i < 20; i++) {
-        let itemList = new ListItemComponent;
-        listContainer.appendChild(itemList);
-    }
+var addItemListBtnHandler = function(e){
+    let addItemListBtn = document.querySelector("add-item-list-btn");
+    let listContainer = document.querySelector(".list-field");
+    listContainer.removeChild(addItemListBtn)
+    let listItem = new ListItemComponent;
+    listContainer.appendChild(listItem)
+    listContainer.appendChild(addItemListBtn)
 }
 
 

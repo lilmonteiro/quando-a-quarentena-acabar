@@ -1,0 +1,91 @@
+html,
+body {
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    background-color: #674A9E;
+    display: grid;
+    margin: 0;
+    grid-template: 1fr 5em/ 100%;
+    align-items: center;
+    justify-items: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.home-panel {
+    display: grid;
+    height: auto;
+    width: 50%;
+    max-width: 700px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    grid-template: 1fr / 1fr 1fr;
+    grid-gap: 3em;
+}
+
+.home-logo,
+.home-buttons {
+    display: grid;
+    align-self: center;
+}
+
+.home-logo {
+    grid-row: 1;
+    grid-column: 1 / 1;
+    justify-self: end;
+    box-sizing: border-box;
+}
+
+.sucess-infos {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-media-bar {
+    grid-row: 2;
+    grid-column: 1;
+    width: 15em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-self: flex-start;
+}
+
+.id-text,
+.id-info,
+.id-stayhome {
+    text-align: center;
+}
+
+.id-text,
+.id-info{
+    color: white;
+    margin-bottom: 0;
+}
+
+.id-text {
+    font-size: 1.3em;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+.id-info {
+    font-size: 0.9em;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.id-stayhome {
+    font-size: 1.3em;
+    margin-bottom: 0;
+}
+
+.social-icon {
+    width: 2em;
+    cursor: pointer;
+}

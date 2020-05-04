@@ -25,6 +25,11 @@ var addListEventHandler = function(event){
         createListBtn.classList.remove("inactive")
         addListBtn.classList.remove("inactive")
     })
+
+    var sendIdBtn = document.querySelector(".send-input-icon")
+    sendIdBtn.addEventListener("click", function(e){
+        window.location="/html/AddToList.html"
+    })
 }
 
 window.addEventListener("load", start);

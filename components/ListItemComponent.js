@@ -26,14 +26,28 @@ export class ListItemComponent extends HTMLElement {
                 margin: 0 0.5em;
                 width: 80%;
                 align-self: flex-start;
-                color:#674A9E;
+                color:#58595B;
+                }
+
+                .list-delete-btn{
+                background-color: #674A9E;
+                border-radius: 100%;
+                width: 1.5em;
+                height: 1.5em;
+                align-self: flex-start;
+                text-align:center;
+                font-size: 1em;
+                font-weight: 700;
+                cursor:pointer;
+                color:white;
                 }
 
             </style>
                       
             <div class="list-item">
                 <div class="list-check-box"></div>
-                <p contenteditable = "true"></p>
+                <p contenteditable = "true"><slot></slot></p>
+                <div class="list-delete-btn">x</div>
             </div>           
         `;
     }
